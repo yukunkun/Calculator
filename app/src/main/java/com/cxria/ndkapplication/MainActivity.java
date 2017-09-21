@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     // +
                     case 3:
-                        if(result.length()>1&&!result.contains("+")&&!result.contains("-")&&!result.contains("*")&&!result.contains("/")){
+                        if(result.length()>0&&!result.contains("+")&&!result.contains("-")&&!result.contains("*")&&!result.contains("/")){
                             result+="+";
                         }
                         break;
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     // -
                     case 7:
-                        if(result.length()>1&&!result.contains("+")&&!result.contains("-")&&!result.contains("*")&&!result.contains("/")){
+                        if(result.length()>0&&!result.contains("+")&&!result.contains("-")&&!result.contains("*")&&!result.contains("/")){
 
                             result+="-";
                         }
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     // *
                     case 11:
-                        if(result.length()>1&&!result.contains("+")&&!result.contains("-")&&!result.contains("*")&&!result.contains("/")){
+                        if(result.length()>0&&!result.contains("+")&&!result.contains("-")&&!result.contains("*")&&!result.contains("/")){
                             result+="*";
                         }
                         break;
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     // .
                     case 13:
-                        if(result.length()>1){
+                        if(result.length()>0){
                             String substring = result.substring(result.length()-1, result.length());
                             if(!substring.equals(".")&&!substring.equals("+")&&!substring.equals("-")&&!substring.equals("*")&&!substring.equals("/")){
                                 result+=".";
@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     // /
                     case 15:
-                        if(result.length()>1&&!result.contains("+")&&!result.contains("-")&&!result.contains("*")&&!result.contains("/")){
+                        if(result.length()>0&&!result.contains("+")&&!result.contains("-")&&!result.contains("*")&&!result.contains("/")){
                             result+="/";
                         }
                         break;
