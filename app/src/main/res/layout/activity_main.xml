@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cxria.ndkapplication.MainActivity">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_marginTop="80dp"
+                    android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:hint="0"
+            android:textColorHint="#000000"
+            android:id="@+id/tv_show_result"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:layout_marginRight="10dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:hint="0"
+            android:textColorHint="#000000"
+            android:layout_marginRight="80dp"
+            android:id="@+id/tv_show_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp"/>
+        <View android:layout_width="match_parent"
+              android:background="#e1e1e1"
+              android:layout_height="0.5dp"/>
+
+    </RelativeLayout>
+    <View android:layout_width="match_parent"
+          android:background="#e1e1e1"
+          android:layout_height="0.5dp"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <GridView android:layout_width="match_parent"
+                  android:layout_marginTop="5dp"
+                  android:id="@+id/gv_number"
+                  android:columnWidth="1dp"
+                  android:numColumns="4"
+                  android:layout_height="wrap_content">
+        </GridView>
+    </LinearLayout>
+</LinearLayout>
