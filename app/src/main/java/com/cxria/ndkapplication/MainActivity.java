@@ -15,11 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView mTextView;
     private GridView mGridView;
-    private double number1;
-    private double number2;
     private String result="";
-    private String numberContent;
-    private boolean isSameNum;
 
     static {
         System.loadLibrary("hello");
